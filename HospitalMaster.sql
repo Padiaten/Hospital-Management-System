@@ -10,7 +10,7 @@ use HospitalDB;
 drop table if exists Doctor;
 
 create table Doctor (
-	Id int PRIMARY KEY,
+	Id int PRIMARY KEY AUTO INCREMENT ,
     Name varchar(50) NOT NULL,
     Speciality varchar(50) NOT NULL,
     Phone varchar(10) NOT NULL
@@ -19,7 +19,7 @@ create table Doctor (
 drop table if exists Tests;
 
 create table Tests(
-		Id int PRIMARY KEY,
+		Id int PRIMARY KEY AUTO INCREMENT,
         Type varchar(200) NOT NULL,
         Category varchar(200) NOT NULL
         );
@@ -27,7 +27,7 @@ create table Tests(
 drop table if exists Patient;
 
 create table Patient(
-			Id int PRIMARY KEY, 
+			Id int PRIMARY KEY AUTO INCREMENT, 
             Name varchar(60) NOT NULL, 
             DateOfBirth date NOT NULL,
 			Phone varchar(10) NOT NULL,
